@@ -1,3 +1,5 @@
+//  SS=90(9),OB=93(10),CS=89(9),EC=94(10),FPGA=90(9),IE=78(9)
+
 #include<iostream>
 using namespace std;
 
@@ -151,7 +153,7 @@ int main(){
 
             min_marks = 90.01;
             marks_req = 2.5*(min_marks-ce_val-lpw_val);
-            if(marks_req > 100)     cout << "Not achievable for 10 gpa\n";
+            if(marks_req > 100)     cout << "you need " << marks_req << " marks to score 10 gpa\n";
             else if(marks_req < 0)  cout << "Already achieved 10 gpa!\n";
             else                    cout << "you need " << marks_req << " marks to score 10 gpa\n";
             break;
